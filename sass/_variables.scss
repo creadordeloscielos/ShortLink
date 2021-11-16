@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* PALETA DE COLORES A UTILIZAR */
+
+$Cyan:hsl(180, 66%, 49%);
+$Violet:hsl(257, 27%, 26%);
+
+$Red:hsl(0, 87%, 67%);
+
+$Gray:hsl(0, 0%, 75%);
+$Gviolet:hsl(257, 7%, 63%);
+$DarkBlue:hsl(255, 11%, 22%);
+$Dviolet:hsl(260, 8%, 14%);
+
+
+
+@mixin btn-cyan{
+        color: #fff;
+        background: $Cyan;
+        padding: 8px 25px;
+        border-radius: 50px; 
+        transition: background .3s ease-in-out;
+        display: inline-block;
+      &:hover {
+        background: #2acfcfad;
+      }
+    
+    }
+      
