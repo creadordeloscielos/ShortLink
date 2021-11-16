@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+p {
+  text-decoration: none;
+  color: $Gray;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  display: none;
+}
+
+/* CLASES REUTILIZABLES */
+
+.wrapper {
+  max-width: 1400px;
+  width: 80%;
+  margin: auto;
+}
+
+.dp-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* MENU */
+
+.menu {
+  padding-top: 25px;
+  font-weight: 700;
+}
+
+nav {
+  margin-left: 20px;
+  display: inline-block;
+  flex-grow: 2;
+
+  a {
+    margin-left: 25px;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: $DarkBlue;
+    }
+  }
+}
+
+.login ul li:last-child a {
+  @include btn-cyan;
+}
+
+/* BANNER */
+
+.banner {
+  padding: 50px 0px 130px 0px;
+
+  h1 {
+    color: $DarkBlue;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  a {
+    @include btn-cyan;
+    margin-top: 25px;
+    font-weight: 700;
+    padding: 10px 30px;
+  }
+  .img {
+    border: 1px solid red;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* LINKS */
+
+.links {
+  .link {
+    padding: 50px 40px;
+    background: $Violet;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top: -125px;
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  input[type="text"] {
+    width: 100%;
+    border: none;
+    margin-right: 35px;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    z-index: 1;
+    color: $DarkBlue;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type="button"] {
+    @include btn-cyan;
+    border: none;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 13px 35px;
+    z-index: 1;
+  }
+}
+
+.short_link {
+  background: #fff;
+  padding: 15px 25px;
+  margin: 20px auto;
+  border-radius: 5px;
+
+  p {
+    color: $DarkBlue;
+    font-size: 1.1em;
+  }
+
+  a {
+    font-size: 1em;
+    color: $Cyan;
+    margin-right: 20px;
+  }
+
+  input[type="button"] {
+    @include btn-cyan;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 10px 25px;
+  }
+}
+
+.advanced {
+  background: #f0f1f6;
+  padding: 50px 0px;
+
+  .txt {
+    margin: 80px auto 40px auto;
+    text-align: center;
+
+    h3 {
+      font-size: 2.4em;
+      color: $DarkBlue;
+      padding-bottom: 10px;
+    }
+    p {
+      max-width: 550px;
+      font-weight: 500;
+      font-size: 1.2em;
+      margin: auto;
+    }
+  }
+
+  .cards {
+    .card {
+      background: #ffff;
+      border-radius: 5px;
+      padding: 25px 30px;
+      box-shadow: 2px 2px 4px 0px #edede;
+      max-width: 350px;
+
+      &:nth-child(2) {
+        margin: 60px 15px 15px 10px;
+      }
+
+      &:last-child {
+        margin-top: 120px;
+      }
+
+      .img {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: -56px;
+        margin-bottom: 20px;
+
+        background: $Violet;
+        .img {
+          background: $Violet;
+        }
+      }
+
+      .title {
+        p {
+          font-size: 1.2em;
+          font-weight: 700;
+          color: #000;
+          margin-bottom: 8px;
+          color: $DarkBlue;
+        }
+      }
+    }
+  }
+}
+
+.bosst {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: $Violet;
+  z-index: 10;
+  padding: 50px;
+
+  h3 {
+    position: relative;
+    font-size: 2em;
+  }
+
+  a {
+    @include btn-cyan;
+    padding: 10px 35px;
+    margin-top: 15px;
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  padding: 50px 0px;
+  background: $Dviolet;
+  font-size: 14px;
+  line-height: 2;
+
+  .container {
+    align-items: flex-start;
+  }
+
+  .links {
+    align-items: flex-start;
+    width: 70%;
+  }
+
+  ul {
+    margin-left: 10px;
+  }
+
+  /* SELECCION DE LOS PRIMEROS HIJOS DE LA LISTA DE TIPA a*/
+
+  ul li:first-child a {
+    color: #fff;
+    padding-bottom: 10px;
+    display: inline-block;
+    font-size: 15px;
+  }
+
+  i {
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 7px;
+  }
+
+  img {
+    filter: invert(1);
+  }
+
+  a {
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: #2acfcfad;
+    }
+  }
+}
+
+.redes {
+  ul {
+    margin-top: -5px;
+  }
+  ul li:first-child a {
+    padding-bottom: 0px !important;
+  }
+
+  i {
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: #2acfcfad;
+    }
+  }
+}

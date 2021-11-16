@@ -1,0 +1,150 @@
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .banner {
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  .advanced .cards .card .title p {
+    font-size: 1em;
+  }
+
+  .links input[type="text"] {
+    font-size: 1em;
+  }
+
+  .links input[type="button"] {
+    font-size: 1em;
+  }
+
+  .short_link p,
+  .short_link a {
+    font-size: 1em;
+  }
+
+  .advanced .txt h3 {
+    font-size: 2em;
+  }
+
+  .advanced .txt p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menu {
+    display: block;
+  }
+  i {
+    display: block;
+    color: $Violet;
+    font-size: 18px;
+  }
+
+  nav {
+    display: none !important;
+    margin-left: 0;
+    a {
+      margin-left: 0;
+    }
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    .txt {
+      text-align: center;
+    }
+  }
+
+  .cards {
+    text-align: center;
+
+    flex-direction: column;
+    .img {
+      margin: auto;
+    }
+  }
+
+  .links {
+    .link {
+      padding: 30px 20px;
+      flex-direction: column;
+      margin-top: -139px;
+    }
+  }
+
+  .links input[type="text"] {
+    margin-right: 0px;
+  }
+
+  .links input[type="button"] {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .short_link {
+    flex-direction: column;
+    padding: 20px 0px;
+    align-items: stretch;
+
+    .title{
+        border-bottom: 1px solid $Gray;
+
+    }
+
+    p {
+      margin: auto 15px;
+      padding: 0px 0px 10px 0px;
+    }
+
+    .link {
+        margin: auto 15px;
+      a {
+        display: block;
+        padding: 15px 0px 8px 0px;
+      }
+    }
+
+    input[type="button"] {
+      width: 100%;
+    }
+  }
+
+  .advanced .txt {
+    margin: 45px auto 50px auto;
+  }
+
+  .advanced .txt p {
+    margin-bottom: 60px;
+  }
+
+  .advanced .cards .card:last-child {
+    margin-top: 55px;
+  }
+  .bosst h3 {
+    position: relative;
+    font-size: 1.5em;
+  }
+
+  footer{
+      .container, .links{
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          ul{
+              margin: 10px;
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .advanced .cards .card:last-child {
+    margin-top: 55px;
+  }
+}
